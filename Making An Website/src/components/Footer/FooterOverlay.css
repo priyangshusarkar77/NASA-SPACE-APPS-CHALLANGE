@@ -1,0 +1,132 @@
+.overlay-section{
+    background: url('../../assets/bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    padding: 4rem 6rem;
+    width: 100%;
+    color: var(--color-white);
+}
+
+.overlay{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6rem;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact h2{
+    font-family: var(--font-base);
+    color: var(--color-golden);
+    font-size: 32px;
+    line-height: 83.2px;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+}
+
+.contact p{
+    font-family: var(--font-alt);
+    color: var(--color-white);
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    line-height: 28px;
+    font-size: 16px;
+}
+
+.address{
+    margin-bottom: 0.5rem;
+}
+
+.message{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-10%, 5%);
+}
+
+.name{
+    width: 70%;
+}
+
+.message p{
+    font-family: var(--font-alt);
+    color: var(--color-white);
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    line-height: 28px;
+    font-size: 16px;
+}
+
+.img-spoon{
+    margin: 1rem 0;
+}
+
+.facebook, .instagram, .twitter{
+    font-size: 28px;
+    margin: 0 1rem;
+}
+
+.working-hours{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: translateY(10%);
+}
+
+.working-hours h2{
+    font-family: var(--font-base);
+    color: var(--color-golden);
+    font-size: 32px;
+    line-height: 83.2px;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+}
+
+.working-hours p{
+    font-family: var(--font-alt);
+    color: var(--color-white);
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    line-height: 28px;
+    font-size: 16px;
+}
+
+.rights{
+    color: var(--color-grey);
+}
+
+@media screen and (max-width: 650px){
+    .overlay-section{
+        padding: 4rem 2rem;
+    }
+
+    .overlay{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact{
+        margin-bottom: 3rem;
+    }
+
+    .message{
+        transform: translate(0, 0);
+        margin-bottom: 2rem;
+    }
+
+    .working-hours{
+        transform: translateY(0);
+    }
+}

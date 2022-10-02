@@ -1,0 +1,81 @@
+.chef-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+    background: url('../../assets/bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    padding: 4rem 6rem;
+}
+
+.chef-image{
+    width: 40%;
+}
+
+.chef-content{
+    width: 50%;
+    margin-left: 4rem;
+    color: var(--color-white);
+}
+
+.chef-content h1{
+    font-family: var(--font-base);
+    color: var(--color-golden);
+    font-size: 64px;
+    line-height: 83.2px;
+    letter-spacing: 0.04em;
+}
+
+.chef-word{
+    font-family: var(--font-alt);
+    color: var(--color-grey);
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    line-height: 28px;
+    font-size: 16px;
+}
+
+.quote{
+    padding-top: 2rem;
+    margin-right: 0.8rem;
+    transform: translateY(8%);
+    width: 60px;
+}
+
+.chef-name{
+    font-family: var(--font-base);
+    color: var(--color-golden);
+    font-size: 32px;
+    line-height: 41px;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    font-weight: 400;
+    padding-top: 2rem;
+}
+
+.chef-sign{
+    width: 250px;
+    margin-top: 3rem;
+}
+
+@media screen and (max-width: 650px) {
+    .chef-section{
+        flex-direction: column;
+        padding: 4rem 2rem;
+    }
+
+    .chef-image{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .chef-content{
+        text-align: center;
+        width: 100%;
+        margin-left: 0;
+    }
+}

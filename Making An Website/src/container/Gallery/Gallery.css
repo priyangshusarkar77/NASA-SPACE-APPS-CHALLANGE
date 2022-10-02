@@ -1,0 +1,162 @@
+.gallery-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0 4rem 6rem;
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+.gallery-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 2rem;
+    
+}
+
+.gallery-content h1{
+    font-family: var(--font-base);
+    color: var(--color-golden);
+    font-size: 64px;
+    line-height: 83.2px;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    margin-bottom: 1.5rem;
+}
+
+.gallery-content p{
+    font-family: var(--font-alt);
+    color: var(--color-grey);
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    line-height: 28px;
+    font-size: 16px;
+}
+
+.gallery-button{
+    background-color: var(--color-crimson);
+    color: var(--color-black);
+    font-family: var(--font-base);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    line-height: 28px;
+    font-size: 20px;
+    padding: 0.5rem 1.5rem;
+    margin-top: 1.5rem;
+    border-radius: 1px;
+    cursor: pointer;
+}
+
+.gallery-photos-section{
+    display: flex;
+    flex: 1;
+    max-width: 50%;
+    position: relative;
+}
+
+.gallery-photos{
+    display: flex;
+    width: max-content;
+    overflow-x: scroll;
+}
+
+.gallery-photos::-webkit-scrollbar{
+    display: none;
+}
+
+.actual-pics{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 301px;
+    height: 447px;
+    position: relative;
+    margin-right: 2rem;
+}
+
+.actual-pics img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+    transition: 0.5s ease;
+}
+
+.insta-icon{
+    position: absolute;
+    color: #fff;
+    font-size: 2rem;
+    opacity: 0.5;
+    transition: 0.5 ease;
+    cursor: pointer;
+}
+
+.actual-pics:hover img{
+    opacity: 0.3;
+    transition: 0.5 ease;
+}
+
+.actual-pics:hover .insta-icon{
+    opacity: 1;
+    transition: 0.5 ease;
+}
+
+.control-buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    padding: 0 1rem;
+}
+
+.scroll-right-button, .scroll-left-button{
+    color: var(--color-golden);
+    font-size: 3.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    background-color: rgba(6,6,6,0.6);
+    border-radius: 50%;
+    transition: 0.5s ease;
+} 
+
+.scroll-right-button:hover, .scroll-left-button:hover{
+    color: var(--color-white);
+    transition: 0.5s ease;
+    background-color: var(--color-black);
+}
+
+@media screen and (max-width: 650px){
+    .gallery-section{
+        flex-direction: column;
+        padding: 4rem 2rem;
+    }
+
+    .gallery-content{
+        margin-bottom: 2rem;
+        align-items: center;
+        padding-right: 0;
+        justify-content: center;
+    }
+
+    .gallery-content h1, .gallery-content p{
+        text-align: center;
+    }
+
+    .gallery-photos-section{
+        max-width: none;
+        width: max-content;
+        flex: none;
+    }
+
+    .gallery-photos{
+        width: 301px;
+    }
+
+    .actual-pics{
+        width: 100%;
+    }
+}
