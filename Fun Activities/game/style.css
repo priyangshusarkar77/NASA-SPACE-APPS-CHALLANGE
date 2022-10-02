@@ -1,0 +1,25 @@
+.marquee{
+    position: absolute;
+}
+
+.timer{
+    height: 100px;
+}
+
+.timer img{
+    height: 50px;
+}
+
+.explain{
+    position: absolute;
+    top: -1rem;
+    left: 36rem;
+}
+
+.explain h1{
+    text-align: center;
+}
+
+.marquee img{
+    transform: translate(50%,50%);
+}
