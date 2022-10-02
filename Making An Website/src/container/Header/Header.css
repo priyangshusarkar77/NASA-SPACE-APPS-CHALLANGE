@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background-color: #000;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+.hero-text ul li {
+    visibility: visible;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn {
+  border: 1.5px solid #fff;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1.25rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.game{
+    transform: translateX(-650px);
+}
+
+.btn:hover {
+  color: #000;
+  background: #fff;
+}
+
+.wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 300px;
+}
+
+.parallax__group {
+  height: 100vh;
+  width: 100vw;
+  transform-style: preserve-3d;
+  z-index: -1;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.sky {
+  background-image: url('https://i.guim.co.uk/img/media/04077286060a6cfaec38b81b89fb3a7d1ada33d8/0_24_2500_1500/master/2500.jpg?width=620&quality=45&dpr=2&s=none'), linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2));
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100px 100px;
+  transform: translateZ(-600px) scale(3);
+  z-index: 1;
+  background-attachment: fixed;
+}
+
+.bushes {
+  background: url('https://raw.githubusercontent.com/KiaanCastillo/Pure-CSS-Multilayer-Parallax/master/img/bushes.png'), linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)) no-repeat center;
+  background-size: cover;
+  transform: translateZ(-525px) scale(2.75);
+  z-index: 2;
+}
+
+.water {
+  background: url('https://raw.githubusercontent.com/KiaanCastillo/Pure-CSS-Multilayer-Parallax/master/img/bushes.png'), linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)) no-repeat center;
+  background-size: cover;
+  transform: translateZ(-400px) scale(2.33333333);
+  z-index: 3;
+}
+
+.people1 {
+  background: url('https://raw.githubusercontent.com/KiaanCastillo/Pure-CSS-Multilayer-Parallax/master/img/people1.png'), linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)) no-repeat center;
+  background-size: cover;
+  transform: translateZ(-250px) scale(1.833333333);
+  z-index: 4;
+}
+
+.people2 {
+  background: url('https://raw.githubusercontent.com/KiaanCastillo/Pure-CSS-Multilayer-Parallax/master/img/people2.png'), linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)) no-repeat center;
+  background-size: cover;
+  transform: translateZ(-125px) scale(1.4167);
+  z-index: 5;
+}
+
+.people3 {
+  background: url('https://raw.githubusercontent.com/KiaanCastillo/Pure-CSS-Multilayer-Parallax/master/img/people3.png'), linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)) no-repeat center;
+  background-size: cover;
+  transform: translateZ(0) scale(1);
+  z-index: 6;
+}
+
+.hero-text {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.3),
+    rgba(255, 255, 255, 0.05)
+  );
+  background-size: cover;
+  transform: translateZ(0) scale(1);
+  z-index: 7;
+}
+
+.hero-text h2 {
+  font-size: 1.25rem;
+  position: absolute;
+  left: 2.5rem;
+  top: 2.5rem;
+}
+
+.hero-text ul {
+  font-size: 0.75rem;
+  position: absolute;
+  right: 2.5rem;
+  top: 2.5rem;
+}
+
+.hero-text ul li {
+  margin-left: 2.5rem;
+  list-style-type: none;
+  float: left;
+}
+
+.year-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 20rem;
+  height: 25rem;
+}
+
+.year-container h1 {
+  font-family: Bebas, sans-serif;
+  font-weight: 400;
+  position: absolute;
+  font-size: 5rem;
+  width: 650px;
+  transform: translate(-26%, 15%);
+  text-align: center;
+}
+
+
+.jovi{
+    position: absolute;
+    width: 600px;
+    margin: 5rem;
+    left: 24rem;
+    line-height: 27px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-align: justify;
+}
+
+.jovian{
+    margin-bottom: 20rem;
+    font-size: 36;
+    transform: translate(20%, -50%);
+}
+
+.objective{
+    z-index: 10;
+    padding-bottom: 8rem;
+}
+
+.objective p{
+    margin: 0 14rem;
+    margin-bottom: 20rem;
+    align-content: center;
+    text-align: center;
+    line-height: 27px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+}
+
+.info-container {
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('https://wallpaperaccess.com/full/1268183.jpg');
+  transform: translateZ(0) scale(1);
+  z-index: 8;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-container img {
+  width: 75%;
+  margin-bottom: 2.5rem;
+  filter: saturate(0.65);
+}
+
+.info-container h2,
+.info-container p {
+  margin-bottom: 1rem;
+}
+
+.text-container p:nth-of-type(1) {
+  font-weight: 400;
+  font-size: 0.75rem;
+  margin: 1rem 2.5rem;
+}
+
+.text-container p:nth-of-type(2) {
+  font-size: 0.6rem;
+  margin-bottom: 3rem;
+  background: rgb(0,0,0);
+}
+
+.images{
+    display: flex;
+    padding-top: 7rem;
+    height: 1000px;
+    padding-bottom: 4rem;
+}
+
+.jupiter{
+    height: 530px;
+    position: relative;
+    right: 4rem;
+    top: 8rem;
+}
+
+.uranus{
+    height: 400px;
+    position: relative;
+    top: 20rem;
+    right: 12rem;
+}
+
+.neptune{
+    height: 300px;
+    position: relative;
+    top: 13rem;
+    right: 24rem;
+}
+
+.saturn{
+    height: 400px;
+    position: relative;
+    top: 21rem;
+    right: 7rem;
+}
+
+.jovian{
+    position: absolute;
+    left: 40rem;
+}
+
+.objective{
+    padding-top: 10rem;
+    z-index: 9;
+    background-image: url('https://wallpaperaccess.com/full/1268183.jpg');
+    
+}
+
+.objective h1{
+    text-align: center;
+    margin-bottom: 2rem;
+    z-index: 100;
+}
+
+.jupi{
+    height: 450px;
+    display: flex;
+    margin-bottom: 5rem;
+}
+
+.block{
+    position: absolute;
+    color: black;
+    background-color: black;
+    transform: translateY(-160%);
+    padding-top: 1rem;
+    left: 36rem;
+    padding-bottom: 2rem;
+}
+
+.jupi img{
+    height: 100%;
+}
+
+.sati{
+    display: flex;
+    width: 1000px;
+    margin-bottom: 5rem;
+}
+
+.sati img{
+    position: relative;
+    height: 400px;
+    left: 15rem;
+}
+
+.ura{
+    display: flex;
+    margin-bottom: 5rem;
+    height: 500px;
+}
+
+.ura img{
+    height: 100%;
+    width: 40%;
+    margin-right: 6rem;
+    transform: translateX(20%);
+}
+
+.nepi{
+    display: flex;
+    margin-bottom: 5rem;
+}
+
+.nepi img{
+    width: 50%;
+}
+
+.content h1{
+    margin-bottom: 2rem;
+}
+
+.content p{
+    line-height: 27px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-align: justify;
+}
+
+.content0{
+    padding-right: 8rem;
+}
+
+.content1{
+    transform: translateX(30%);
+    
+}
+
+.content2{
+    width: 700px;
+    transform: translate(15%, 10%);
+    padding-right: 120px;
+}
+
+.content3{
+    width: 50%;
+    padding-left: 9rem;
+    transform: translateY(20%);
+}
+
+.head{
+    color: yellow;
+    padding-bottom: 3rem;
+}
+
+.planets{
+    background-image: url('https://wallpaperaccess.com/full/1268183.jpg');
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1126px) {
+  .sky,
+  .bushes,
+  .water,
+  .people1,
+  .people2,
+  .people3,
+  .hero-text {
+    background-size: contain;
+    overflow: hidden;
+  }
+}

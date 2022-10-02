@@ -1,0 +1,60 @@
+.menu{
+    padding: 4rem 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    width: 100%;
+}
+
+.hero-text ul {
+    font-size: 0.75rem;
+    position: absolute;
+    right: 2.5rem;
+    top: 2.5rem;
+}
+
+.rest{
+    transform: translateY(30%);
+    display: flex;
+}
+  
+.hero-text ul li {
+margin-left: 2.5rem;
+list-style-type: none;
+float: left;
+}
+
+.laurels{
+    height: 200px;
+    width: 200px;
+    border: 2px solid white;
+}
+
+.mam{
+    margin-left: 4rem;
+    margin-right: 4rem;
+    font-size: 3rem;
+    transform: translateY(40%);
+}
+
+p{
+    font-family: var(--font-alt);
+    color: var(--color-grey);
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    line-height: 24px;
+    font-size: 15px;
+    transform: translateY(-20%);
+}
+
+.menu-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
